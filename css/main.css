@@ -70,22 +70,25 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 10px solid #e44d26;
+    border-bottom: 10px solid #FFB03B;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #FFB03B;
 }
 
 .header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+.footer-container {
+    background: #B64926;
+}
+
+.main aside{
+    background: #468966;
 }
 
 .title {
-    color: white;
+    color: #FFB03B;
 }
 
 /* ==============
@@ -108,7 +111,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #468966;
 }
 
 nav a:hover,
@@ -154,7 +157,9 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-
+.main-container {
+    background: #FFF0A5;
+}
 
 
 
