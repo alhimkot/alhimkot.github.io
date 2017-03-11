@@ -72,19 +72,22 @@ body {
 .header-container {
     border-bottom: 10px solid #FFB03B;
 }
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #FFB03B;
+.header-container{
+    background: #B64926;
 }
 
-.header-container,
+.footer-container{
+    border-top: 20px solid #FFB03B;
+}
 .footer-container {
     background: #B64926;
 }
 
 .main aside{
     background: #468966;
+}
+.main aside {
+    border-top: 20px solid #FFB03B;
 }
 
 .title {
