@@ -100,11 +100,12 @@ body {
 }
 
 .ie7 {
-    padding-top: 7px;
+    padding-top: 10px;
 }
 
-.title {
-    padding-top: 7px;
+.title a {
+    padding-top: 10px;
+    text-decoration: none;
     color: #FFB03B;
 }
 
