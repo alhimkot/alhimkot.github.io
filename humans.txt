@@ -4,10 +4,12 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    alhimkot -- all-in -- nope
 
 # THANKS
 
-    <name>
+    мне - alhimkot
+    http://www.initializr.com/ за шаблон
 
 # TECHNOLOGY COLOPHON
 
