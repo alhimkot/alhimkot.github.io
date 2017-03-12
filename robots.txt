@@ -2,4 +2,3 @@ User-agent: *
 Disallow:
 Host: https://alhimkot.github.io/
 sitemap: https://alhimkot.github.io/sitemap.xml
-
