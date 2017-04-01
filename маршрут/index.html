@@ -3,13 +3,13 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="Awesome.css">
+	<link rel="stylesheet" href="../Awesome.css">
 	<style type="text/css">
 		
 		@font-face 
 			{
 			    font-family: Krabuler;
-			    src: url(data/Krabuler.woff2);
+			    src: url(../data/Krabuler.woff2);
 	   		}
 
 	   	*
@@ -83,8 +83,37 @@
 				float: right;
 
 			}
+			
+		#map 
+			{
+				width: 100%;
+				height: 300px;
+				margin-bottom: 7px;
+			}
+
 
 	</style>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	    function initialize() {
+	        var mapCanvas = document.getElementById('map');
+	        var myLatLng = {lat: 51.434408, lng: -2.53531};
+	        var mapOptions = {
+	            center: new google.maps.LatLng(51.434408, -2.53531),
+	            zoom: 15,
+	            mapTypeId: google.maps.MapTypeId.ROADMAP
+	        }
+	        var map = new google.maps.Map(mapCanvas, mapOptions);
+	        var marker = new google.maps.Marker({
+	            position: myLatLng,
+	            map: map,
+	            title: 'Hello Wold'
+	});
+	    }
+	    google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
 </head>
 <body>
 
@@ -96,7 +125,7 @@
 	<ul>
 		<li><a class="button" href="javascript:void(0)"><i class="fa fa-twitch fa-lg"></i></a></li>
 		<li><a class="button" href="javascript:void(0)"><i class="fa fa-vk fa-lg"></i></a></li>
-		<li><a class="button" href="маршрут/"><i class="fa fa-compass fa-lg"></i> Маршрут</a></li>
+		<li><a class="button" href="javascript:void(0)"><i class="fa fa-compass fa-lg"></i> Маршрут</a></li>
 		<li><a class="button" href="javascript:void(0)"><i class="fa fa-book fa-lg"></i> Записки</a></li>
 		<li><a class="button" href="javascript:void(0)"><i class="fa fa-camera-retro fa-lg"></i> ВидеоБлог</a></li>
 	</ul>
@@ -106,12 +135,7 @@
 
 <div class="content">
 	<article>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div id="map"></div>
 	</article>
 	<aside>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
